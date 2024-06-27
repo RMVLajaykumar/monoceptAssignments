@@ -48,7 +48,7 @@ public class LibraryManagementTest {
                     System.out.println("Invalid choice. Please try again.");
             }
         }
-        scanner.close();
+      
     }
 
     private static void displayMenu() {
