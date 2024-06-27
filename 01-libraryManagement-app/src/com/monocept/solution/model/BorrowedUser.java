@@ -1,7 +1,6 @@
 package com.monocept.solution.model;
 
 public class BorrowedUser {
-    
     private Ibook borrowBook;
     private Ireturn returnBook;
 
