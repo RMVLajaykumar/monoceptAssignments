@@ -16,8 +16,17 @@ public class LeastFrequentlyUsed implements IStrategy{
 				minCount=count;
 				key=key1;	
 			}
+			
 		}
-		memorymap.remove(key);
+		   if (key == null && !readingorder.isEmpty()) {
+	            key = readingorder.getFirst();
+	            
+		   }
+		   
+		   if(key!=null) {
+			   memorymap.remove(key);
+			   readingorder.remove(key);
+		   }
 		
 	}
 
